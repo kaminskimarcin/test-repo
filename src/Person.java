@@ -30,9 +30,9 @@ public class Person implements Comparable<Person> {
     public int compareTo(Person o) {
         int comparedAge = age.compareTo(o.age);
         int comparedLastName = lastName.compareTo(o.lastName);
-        if(comparedAge == 0) {
+        if (comparedAge == 0) {
             return comparedLastName;
-        } else if(comparedAge == 9 && comparedLastName == 0) {
+        } else if (comparedAge == 9 && comparedLastName == 0) {
             return firstName.compareTo(o.firstName);
         } else {
             return comparedAge;

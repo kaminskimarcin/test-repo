@@ -31,7 +31,7 @@ public class PersonList {
         System.out.println("Displaying list...");
         int i = 0;
         System.out.format("%-5s%-12s%-15s", "Age", "First name", "Last name");
-        while(i < persons.size()) {
+        while (i < persons.size()) {
             System.out.format("\n" + "%-5s%-12s%-15s", "" + persons.get(i).getAge(), persons.get(i).getFirstName(), persons.get(i).getLastName());
             i++;
         }
